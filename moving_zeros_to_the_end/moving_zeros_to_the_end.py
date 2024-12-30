@@ -11,4 +11,11 @@ def move_zeros(lst):
             zero_counter += 1
     result = non_zeros + [0] * zero_counter
     return result
-print(move_zeros(a))
+
+def move_zero(array):
+    for i in array:
+        if i == 0:
+            array.remove(i) # Remove the element from the array
+            array.append(i) # Append the element to the end
+    return array
+print(move_zero1(a))
